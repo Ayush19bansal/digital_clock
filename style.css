@@ -1,0 +1,33 @@
+body {
+    background: linear-gradient(135deg, #8b5959, #101010); /* Cool gradient background */
+    font-family: 'Helvetica Neue', sans-serif; /* A modern font family */
+    text-align: center; /* Center align text */
+ }
+ 
+ .clock {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%) translateY(-50%);
+     color: #00e6e6; /* Cyan text color */
+     font-size: 80px; /* Larger font size */
+     font-weight: bold; /* Bold text */
+     letter-spacing: 5px; /* Slightly reduced letter spacing */
+     border: 2px solid #00e6e6; /* Cyan border */
+     padding: 20px; /* Increased padding */
+     border-radius: 10px; /* Rounded corners */
+     animation: moveUp 3s infinite ease-in-out; /* Smooth and continuous animation */
+ }
+ 
+ @keyframes moveUp {
+     0%, 100% {
+         transform: translateY(0);
+     }
+     50% {
+         transform: translateY(-200px); /* Give it a subtle bounce effect */
+     }
+     100% {
+        transform: translateY(10px); /* Back to the original position */
+    }
+ }
+ 
